@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Lead Bin Lookup</title>
+<style>
+  :root{
+    --bg:#17181B;
+    --panel:#1F2125;
+    --panel-raised:#26282D;
+    --ink:#EDEBE4;
+    --ink-dim:#8E9096;
+    --amber:#FF8A34;
+    --amber-dim:#7A4A22;
+    --line:#34363B;
+    --danger:#E5484D;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:24px 16px 60px;
+  }
+
+  @font-face{
+    font-family:'IBM Plex Mono';
+    src:local('Courier New');
+  }
+
+  .brand{
+    width:100%;
+    max-width:520px;
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:22px;
+  }
+  .brand-title{
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+    font-weight:600;
+  }
+  .brand-title b{color:var(--amber);}
+  .brand-count{
+    font-size:11px;
+    color:var(--ink-dim);
+    font-variant-numeric:tabular-nums;
+  }
+
+  .search-wrap{
+    width:100%;
+    max-width:520px;
+    position:relative;
+  }
+  .search-input{
+    width:100%;
+    font-size:28px;
+    font-family:'IBM Plex Mono',Consolas,monospace;
+    font-weight:600;
+    letter-spacing:0.04em;
+    padding:18px 20px;
+    background:var(--panel);
+    border:2px solid var(--line);
+    border-radius:10px;
+    color:var(--ink);
+    outline:none;
+    transition:border-color .15s ease;
+  }
+  .search-input::placeholder{
+    color:#54565C;
+    font-weight:500;
+  }
+  .search-input:focus{border-color:var(--amber);}
+
+  .hint{
+    max-width:520px;
+    width:100%;
+    font-size:12px;
+    color:var(--ink-dim);
+    margin-top:8px;
+    padding-left:2px;
+  }
+
+  .results{
+    width:100%;
+    max-width:520px;
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:16px 18px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+  }
+
+  .tag{
+    flex:0 0 auto;
+    background:var(--panel-raised);
+    border:1.5px dashed var(--amber-dim);
+    border-radius:6px;
+    padding:10px 12px;
+    text-align:center;
+    min-width:96px;
+  }
+  .tag-id{
+    font-family:'IBM Plex Mono',Consolas,monospace;
+    font-size:11px;
+    color:var(--ink-dim);
+    letter-spacing:0.08em;
+  }
+  .tag-loc{
+    font-family:'IBM Plex Mono',Consolas,monospace;
+    font-size:20px;
+    font-weight:700;
+    color:var(--amber);
+    letter-spacing:0.02em;
+    margin-top:2px;
+  }
+  .tag-loc.na{color:var(--ink-dim); font-size:13px; font-weight:600;}
+  .tag.scrapped{border-color:var(--danger);}
+  .tag.scrapped .tag-loc{color:var(--danger); font-size:13px;}
+
+  .info{flex:1 1 auto; min-width:0;}
+  .info-desc{
+    font-size:15px;
+    color:var(--ink);
+    line-height:1.35;
+  }
+
+  .empty{
+    max-width:520px;
+    width:100%;
+    text-align:center;
+    color:var(--ink-dim);
+    font-size:13px;
+    padding:40px 12px;
+    line-height:1.6;
+  }
+  .empty b{color:var(--ink);}
+
+  footer{
+    margin-top:auto;
+    padding-top:40px;
+    font-size:11px;
+    color:#54565C;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+  <div class="brand">
+    <div class="brand-title"><b>LEAD</b> LOOKUP</div>
+    <div class="brand-count" id="count"></div>
+  </div>
+
+  <div class="search-wrap">
+    <input
+      class="search-input"
+      id="searchBox"
+      type="text"
+      inputmode="numeric"
+      placeholder="Lead ID…"
+      autocomplete="off"
+      autofocus
+    >
+  </div>
+  <div class="hint">Enter a lead number, or part of a description.</div>
+
+  <div class="results" id="results"></div>
+  <div class="empty" id="emptyState" style="display:none;"></div>
+
+  <footer>Weetech lead bin locations</footer>
+
+<script>
+/* ============================================================
+   DATA SOURCE
+   Update DATA_URL to the published raw URL once GitHub Pages is
+   set up, e.g.:
+   "https://YOUR_USERNAME.github.io/YOUR_REPO/data.json"
+   ============================================================ */
+const DATA_URL = "https://YOUR_USERNAME.github.io/YOUR_REPO/data.json";
+/* ============================================================ */
+
+const searchBox = document.getElementById('searchBox');
+const resultsEl = document.getElementById('results');
+const emptyEl = document.getElementById('emptyState');
+const countEl = document.getElementById('count');
+
+let entries = [];
+
+async function loadData(){
+  countEl.textContent = 'Loading…';
+  searchBox.disabled = true;
+  try{
+    // cache-bust so phones don't hang onto a stale copy
+    const res = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const leads = await res.json();
+    entries = Object.entries(leads);
+    countEl.textContent = entries.length + ' leads';
+    searchBox.disabled = false;
+    searchBox.focus();
+  }catch(err){
+    countEl.textContent = '';
+    emptyEl.style.display = 'block';
+    emptyEl.innerHTML = 'Couldn\'t load lead data.<br>Check your connection and try reloading the page.';
+  }
+}
+loadData();
+
+function isScrapped(rec){
+  return rec.scrapped === '1' || rec.scrapped === 1;
+}
+function normLoc(rec){
+  if (!rec.location || rec.location === '0') return null;
+  return rec.location;
+}
+
+function render(list){
+  resultsEl.innerHTML = '';
+  if (list.length === 0){
+    emptyEl.style.display = 'block';
+    emptyEl.innerHTML = 'No matches for <b>' + escapeHtml(searchBox.value) + '</b>';
+    return;
+  }
+  emptyEl.style.display = 'none';
+
+  for (const [id, rec] of list){
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const scrapped = isScrapped(rec);
+    const loc = normLoc(rec);
+
+    const tag = document.createElement('div');
+    tag.className = 'tag' + (scrapped ? ' scrapped' : '');
+    const tagId = document.createElement('div');
+    tagId.className = 'tag-id';
+    tagId.textContent = '#' + id;
+    const tagLoc = document.createElement('div');
+    tagLoc.className = 'tag-loc' + (!scrapped && !loc ? ' na' : '');
+    tagLoc.textContent = scrapped ? 'SCRAPPED' : (loc || 'No location');
+    tag.appendChild(tagId);
+    tag.appendChild(tagLoc);
+
+    const info = document.createElement('div');
+    info.className = 'info';
+    const desc = document.createElement('div');
+    desc.className = 'info-desc';
+    desc.textContent = (rec.description && rec.description !== '0') ? rec.description : '—';
+    info.appendChild(desc);
+
+    card.appendChild(tag);
+    card.appendChild(info);
+    resultsEl.appendChild(card);
+  }
+}
+
+function escapeHtml(s){
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function search(q){
+  q = q.trim().toLowerCase();
+  if (q === ''){
+    resultsEl.innerHTML = '';
+    emptyEl.style.display = 'none';
+    return;
+  }
+
+  // Exact / padded ID match first
+  const padded = q.padStart(3, '0');
+  const idMatches = entries.filter(([id]) => id === q || id === padded || id.includes(q));
+
+  const descMatches = entries.filter(([id, rec]) =>
+    !idMatches.some(([mid]) => mid === id) &&
+    rec.description && rec.description.toLowerCase().includes(q)
+  );
+
+  render([...idMatches, ...descMatches].slice(0, 25));
+}
+
+searchBox.addEventListener('input', e => search(e.target.value));
+</script>
+</body>
+</html>
