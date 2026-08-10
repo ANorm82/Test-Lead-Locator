@@ -191,11 +191,8 @@
 <script>
 /* ============================================================
    DATA SOURCE
-   Update DATA_URL to the published raw URL once GitHub Pages is
-   set up, e.g.:
-   "https://YOUR_USERNAME.github.io/YOUR_REPO/Data.json"
    ============================================================ */
-const DATA_URL = "https://ANorm82.github.io/Test-Lead-Locator/Data.json";
+const DATA_URL = "https://anorm82.github.io/Test-Lead-Locator/Data.json";
 /* ============================================================ */
 
 const searchBox = document.getElementById('searchBox');
@@ -204,6 +201,11 @@ const emptyEl = document.getElementById('emptyState');
 const countEl = document.getElementById('count');
 
 let entries = [];
+let locationMode = null; // set if the page was opened with ?loc=...
+
+function normalizeLoc(s){
+  return (s || '').replace(/\s+/g, '').toUpperCase();
+}
 
 async function loadData(){
   countEl.textContent = 'Loading…';
@@ -216,7 +218,15 @@ async function loadData(){
     entries = Object.entries(leads);
     countEl.textContent = entries.length + ' leads';
     searchBox.disabled = false;
-    searchBox.focus();
+
+    const params = new URLSearchParams(window.location.search);
+    const locParam = params.get('loc');
+    if (locParam){
+      locationMode = locParam;
+      showLocation(locParam);
+    } else {
+      searchBox.focus();
+    }
   }catch(err){
     countEl.textContent = '';
     emptyEl.style.display = 'block';
@@ -224,6 +234,15 @@ async function loadData(){
   }
 }
 loadData();
+
+function showLocation(loc){
+  document.querySelector('.hint').textContent = 'Leads stored at ' + loc;
+  searchBox.placeholder = 'Search within this location…';
+
+  const target = normalizeLoc(loc);
+  const matches = entries.filter(([id, rec]) => normalizeLoc(rec.location) === target);
+  render(matches);
+}
 
 function isScrapped(rec){
   return rec.scrapped === '1' || rec.scrapped === 1;
@@ -237,7 +256,11 @@ function render(list){
   resultsEl.innerHTML = '';
   if (list.length === 0){
     emptyEl.style.display = 'block';
-    emptyEl.innerHTML = 'No matches for <b>' + escapeHtml(searchBox.value) + '</b>';
+    if (locationMode && searchBox.value.trim() === ''){
+      emptyEl.innerHTML = 'No leads currently recorded at <b>' + escapeHtml(locationMode) + '</b>';
+    } else {
+      emptyEl.innerHTML = 'No matches for <b>' + escapeHtml(searchBox.value) + '</b>';
+    }
     return;
   }
   emptyEl.style.display = 'none';
@@ -279,17 +302,25 @@ function escapeHtml(s){
 
 function search(q){
   q = q.trim().toLowerCase();
+  const pool = locationMode
+    ? entries.filter(([id, rec]) => normalizeLoc(rec.location) === normalizeLoc(locationMode))
+    : entries;
+
   if (q === ''){
-    resultsEl.innerHTML = '';
-    emptyEl.style.display = 'none';
+    if (locationMode){
+      render(pool); // back to the full location list
+    } else {
+      resultsEl.innerHTML = '';
+      emptyEl.style.display = 'none';
+    }
     return;
   }
 
   // Exact / padded ID match first
   const padded = q.padStart(3, '0');
-  const idMatches = entries.filter(([id]) => id === q || id === padded || id.includes(q));
+  const idMatches = pool.filter(([id]) => id === q || id === padded || id.includes(q));
 
-  const descMatches = entries.filter(([id, rec]) =>
+  const descMatches = pool.filter(([id, rec]) =>
     !idMatches.some(([mid]) => mid === id) &&
     rec.description && rec.description.toLowerCase().includes(q)
   );
