@@ -175,13 +175,13 @@
       class="search-input"
       id="searchBox"
       type="text"
-      inputmode="numeric"
       placeholder="Lead ID…"
       autocomplete="off"
       autofocus
     >
   </div>
-  <div class="hint">Enter a lead number, or part of a description.</div>
+  <div class="hint" id="hintText">Enter a lead number, or part of a description.</div>
+  <div class="hint" id="showAllLink" style="display:none;"><a href="#" id="showAllBtn" style="color:var(--amber);">Search all leads instead</a></div>
 
   <div class="results" id="results"></div>
   <div class="empty" id="emptyState" style="display:none;"></div>
@@ -236,13 +236,26 @@ async function loadData(){
 loadData();
 
 function showLocation(loc){
-  document.querySelector('.hint').textContent = 'Leads stored at ' + loc;
-  searchBox.placeholder = 'Search within this location…';
+  document.getElementById('hintText').textContent = 'Leads stored at ' + loc;
+  document.getElementById('showAllLink').style.display = 'block';
+  searchBox.placeholder = 'Filter by ID or description…';
 
   const target = normalizeLoc(loc);
   const matches = entries.filter(([id, rec]) => normalizeLoc(rec.location) === target);
   render(matches);
 }
+
+document.getElementById('showAllBtn').addEventListener('click', (e) => {
+  e.preventDefault();
+  locationMode = null;
+  document.getElementById('hintText').textContent = 'Enter a lead number, or part of a description.';
+  document.getElementById('showAllLink').style.display = 'none';
+  searchBox.placeholder = 'Lead ID…';
+  searchBox.value = '';
+  resultsEl.innerHTML = '';
+  emptyEl.style.display = 'none';
+  searchBox.focus();
+});
 
 function isScrapped(rec){
   return rec.scrapped === '1' || rec.scrapped === 1;
