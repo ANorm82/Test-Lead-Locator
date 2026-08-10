@@ -120,4 +120,202 @@
     min-width:96px;
   }
   .tag-id{
-    font-family:'IBM Plex
+    font-family:'IBM Plex Mono',Consolas,monospace;
+    font-size:11px;
+    color:var(--ink-dim);
+    letter-spacing:0.08em;
+  }
+  .tag-loc{
+    font-family:'IBM Plex Mono',Consolas,monospace;
+    font-size:20px;
+    font-weight:700;
+    color:var(--amber);
+    letter-spacing:0.02em;
+    margin-top:2px;
+  }
+  .tag-loc.na{color:var(--ink-dim); font-size:13px; font-weight:600;}
+  .tag.scrapped{border-color:var(--danger);}
+  .tag.scrapped .tag-loc{color:var(--danger); font-size:13px;}
+
+  .info{flex:1 1 auto; min-width:0;}
+  .info-desc{
+    font-size:15px;
+    color:var(--ink);
+    line-height:1.35;
+  }
+
+  .empty{
+    max-width:520px;
+    width:100%;
+    text-align:center;
+    color:var(--ink-dim);
+    font-size:13px;
+    padding:40px 12px;
+    line-height:1.6;
+  }
+  .empty b{color:var(--ink);}
+
+  footer{
+    margin-top:auto;
+    padding-top:40px;
+    font-size:11px;
+    color:#54565C;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+  <div class="brand">
+    <div class="brand-title"><b>LEAD</b> LOOKUP</div>
+    <div class="brand-count" id="count"></div>
+  </div>
+
+  <div class="search-wrap">
+    <input
+      class="search-input"
+      id="searchBox"
+      type="text"
+      placeholder="Lead ID…"
+      autocomplete="off"
+      autofocus
+    >
+  </div>
+  <div class="hint" id="hintText">Search by lead number, description, or location.</div>
+
+  <div class="results" id="results"></div>
+  <div class="empty" id="emptyState" style="display:none;"></div>
+
+  <footer>Weetech lead bin locations</footer>
+
+<script>
+/* ============================================================
+   DATA SOURCE
+   ============================================================ */
+const DATA_URL = "https://anorm82.github.io/Test-Lead-Locator/Data.json";
+/* ============================================================ */
+
+const searchBox = document.getElementById('searchBox');
+const resultsEl = document.getElementById('results');
+const emptyEl = document.getElementById('emptyState');
+const countEl = document.getElementById('count');
+
+let entries = [];
+
+function normalizeLoc(s){
+  return (s || '').replace(/\s+/g, '').toUpperCase();
+}
+
+async function loadData(){
+  countEl.textContent = 'Loading…';
+  searchBox.disabled = true;
+  try{
+    // cache-bust so phones don't hang onto a stale copy
+    const res = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const leads = await res.json();
+    entries = Object.entries(leads);
+    countEl.textContent = entries.length + ' leads';
+    searchBox.disabled = false;
+
+    const params = new URLSearchParams(window.location.search);
+    const locParam = params.get('loc');
+    if (locParam){
+      searchBox.value = locParam;
+      search(locParam);
+    } else {
+      searchBox.focus();
+    }
+  }catch(err){
+    countEl.textContent = '';
+    emptyEl.style.display = 'block';
+    emptyEl.innerHTML = 'Couldn\'t load lead data.<br>Check your connection and try reloading the page.';
+  }
+}
+loadData();
+
+function isScrapped(rec){
+  return rec.scrapped === '1' || rec.scrapped === 1;
+}
+function normLoc(rec){
+  if (!rec.location || rec.location === '0') return null;
+  return rec.location;
+}
+
+function render(list){
+  resultsEl.innerHTML = '';
+  if (list.length === 0){
+    emptyEl.style.display = 'block';
+    emptyEl.innerHTML = 'No matches for <b>' + escapeHtml(searchBox.value) + '</b>';
+    return;
+  }
+  emptyEl.style.display = 'none';
+
+  for (const [id, rec] of list){
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const scrapped = isScrapped(rec);
+    const loc = normLoc(rec);
+
+    const tag = document.createElement('div');
+    tag.className = 'tag' + (scrapped ? ' scrapped' : '');
+    const tagId = document.createElement('div');
+    tagId.className = 'tag-id';
+    tagId.textContent = '#' + id;
+    const tagLoc = document.createElement('div');
+    tagLoc.className = 'tag-loc' + (!scrapped && !loc ? ' na' : '');
+    tagLoc.textContent = scrapped ? 'SCRAPPED' : (loc || 'No location');
+    tag.appendChild(tagId);
+    tag.appendChild(tagLoc);
+
+    const info = document.createElement('div');
+    info.className = 'info';
+    const desc = document.createElement('div');
+    desc.className = 'info-desc';
+    desc.textContent = (rec.description && rec.description !== '0') ? rec.description : '—';
+    info.appendChild(desc);
+
+    card.appendChild(tag);
+    card.appendChild(info);
+    resultsEl.appendChild(card);
+  }
+}
+
+function escapeHtml(s){
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function search(q){
+  q = q.trim().toLowerCase();
+
+  if (q === ''){
+    resultsEl.innerHTML = '';
+    emptyEl.style.display = 'none';
+    return;
+  }
+
+  const qNorm = normalizeLoc(q);
+
+  // Exact / padded ID match first
+  const padded = q.padStart(3, '0');
+  const idMatches = entries.filter(([id]) => id === q || id === padded || id.includes(q));
+
+  const locMatches = entries.filter(([id, rec]) =>
+    !idMatches.some(([mid]) => mid === id) &&
+    rec.location && normalizeLoc(rec.location).includes(qNorm)
+  );
+
+  const descMatches = entries.filter(([id, rec]) =>
+    !idMatches.some(([mid]) => mid === id) &&
+    !locMatches.some(([mid]) => mid === id) &&
+    rec.description && rec.description.toLowerCase().includes(q)
+  );
+
+  render([...idMatches, ...locMatches, ...descMatches].slice(0, 40));
+}
+
+searchBox.addEventListener('input', e => search(e.target.value));
+</script>
+</body>
+</html>
