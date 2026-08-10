@@ -154,6 +154,24 @@
   }
   .empty b{color:var(--ink);}
 
+  .show-all-btn{
+    max-width:520px;
+    width:100%;
+    margin-top:14px;
+    padding:12px 16px;
+    background:transparent;
+    border:1.5px solid var(--amber-dim);
+    border-radius:8px;
+    color:var(--amber);
+    font-family:'IBM Plex Sans',sans-serif;
+    font-size:14px;
+    font-weight:600;
+    text-align:center;
+    text-decoration:none;
+    display:none;
+  }
+  .show-all-btn:active{background:var(--amber-dim);}
+
   footer{
     margin-top:auto;
     padding-top:40px;
@@ -181,7 +199,7 @@
     >
   </div>
   <div class="hint" id="hintText">Enter a lead number, or part of a description.</div>
-  <div class="hint" id="showAllLink" style="display:none;"><a href="#" id="showAllBtn" style="color:var(--amber);">Search all leads instead</a></div>
+  <a href="#" id="showAllBtn" class="show-all-btn">Search all leads instead</a>
 
   <div class="results" id="results"></div>
   <div class="empty" id="emptyState" style="display:none;"></div>
@@ -237,7 +255,7 @@ loadData();
 
 function showLocation(loc){
   document.getElementById('hintText').textContent = 'Leads stored at ' + loc;
-  document.getElementById('showAllLink').style.display = 'block';
+  document.getElementById('showAllBtn').style.display = 'block';
   searchBox.placeholder = 'Filter by ID or description…';
 
   const target = normalizeLoc(loc);
@@ -249,7 +267,7 @@ document.getElementById('showAllBtn').addEventListener('click', (e) => {
   e.preventDefault();
   locationMode = null;
   document.getElementById('hintText').textContent = 'Enter a lead number, or part of a description.';
-  document.getElementById('showAllLink').style.display = 'none';
+  document.getElementById('showAllBtn').style.display = 'none';
   searchBox.placeholder = 'Lead ID…';
   searchBox.value = '';
   resultsEl.innerHTML = '';
