@@ -102,7 +102,7 @@
     "image": "POWER\\Hawker\\020 - Hawker Circular.JPG"
   },
   "021": {
-    "location": "Bay1, E2",
+    "location": "Bay1, E1",
     "description": "24-Pin Wago Male to Han 24E Male",
     "image": "POWER\\Hawker\\021 - Hawker 24-Wago.JPG"
   },
@@ -112,7 +112,7 @@
     "image": "POWER\\Hawker\\022 - Hawker 20-Wago.JPG"
   },
   "023": {
-    "location": "Bay1, E2",
+    "location": "Bay1, E1",
     "description": "Han 16E Male to Han 24E Male",
     "image": "POWER\\Hawker\\023 - Hawker Han 16 E.JPG"
   },
@@ -1409,7 +1409,7 @@
     "image": "CAT5&6\\280 - M12 A-Code 5-Pole Male.jpg"
   },
   "281": {
-    "location": "BAY1, E2",
+    "location": "BAY1, E1",
     "description": "4-Pole Wago Male",
     "image": "POWER\\281 - 4-Pole Wago Male.jpg"
   },
