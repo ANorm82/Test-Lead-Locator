@@ -644,7 +644,7 @@
     "image": "POWER\\128 - 1x BALS 3-Phase M.jpg"
   },
   "129": {
-    "location": "Bay3, D1",
+    "location": "MD2",
     "description": "1x BALS 3-Phase Male, 1x BALS 3-Phase Female",
     "image": "POWER\\129 - BALS 3-Phase F.jpg"
   },
@@ -706,9 +706,11 @@
     "image": "CAT5&6\\140 - Megabit F - Single Screen.jpg"
   },
   "141": {
-    "location": "BAY1, B3",
-    "description": "Megabit Female + Frame Wire",
-    "image": "CAT5&6\\141 - Megabit F-Frame.jpg"
+    "description": "0",
+    "location": "0",
+    "image": "0",
+    "scrapped": "1",
+    "last_used": ""
   },
   "142": {
     "location": "BAY1, B3",
@@ -938,12 +940,12 @@
     "image": "CAT7\\186 - M12 X-Code PushPull Female.jpg"
   },
   "187": {
-    "location": "Bay3, D1",
+    "location": "MD1",
     "description": "40A 3-Phase Male",
     "image": "POWER\\187 - 40A 3-Phase Male.jpg"
   },
   "188": {
-    "location": "Bay3, D1",
+    "location": "MD3",
     "description": "40A 3-Phase Female",
     "image": "POWER\\188 - 40A 3-Phase Female.jpg"
   },
@@ -1095,9 +1097,11 @@
     "image": "LOOM\\217 - Siemens DANI 025 Loom.jpg"
   },
   "218": {
-    "location": "Bay2, A",
-    "description": "Souriau 4-Pin Female Adapter",
-    "image": "LOOM\\218 - Souriau 4-Pin Female Adapter.jpg"
+    "description": "0",
+    "location": "0",
+    "image": "0",
+    "scrapped": "1",
+    "last_used": ""
   },
   "219": {
     "description": "0",
@@ -1174,9 +1178,11 @@
     "image": "CAT7\\232 - Modular X-Code Male.jpg"
   },
   "233": {
-    "location": "Bay3, G3",
-    "description": "Deutsch 12-Pin DT04 Male",
-    "image": "POWER\\233 - Deutsch DT04 M.jpg"
+    "description": "0",
+    "location": "0",
+    "image": "0",
+    "scrapped": "1",
+    "last_used": ""
   },
   "234": {
     "location": "MB3",
@@ -1224,7 +1230,7 @@
     "image": "POWER\\244 - Han 16E Male.jpg"
   },
   "245": {
-    "location": "BAY3, G2",
+    "location": "MB2",
     "description": "Souriau SMS6P1 Male",
     "image": "POWER\\245 - Souriau SMS6P1 Male.jpg"
   },
@@ -1319,7 +1325,7 @@
     "image": "POWER\\263 - Han CD Male.jpg"
   },
   "264": {
-    "location": "BAY3, D1",
+    "location": "MC2",
     "description": "Mennekes 60A 3-Phase Male",
     "image": "POWER\\264 - Mennekes 60A 3-Phase Male.jpg"
   },
