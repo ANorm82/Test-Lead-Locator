@@ -594,9 +594,11 @@
     "image": "POWER\\118 - Molex MiniFit 5-Pin M.jpg"
   },
   "119": {
-    "location": "Bay1, B1",
-    "description": "M12 A-Code 5-Pole Female PushPull",
-    "image": "CAT5&6\\119 - M12 A-Code 5-Pin PushPull F.jpg"
+    "description": "0",
+    "location": "0",
+    "image": "0",
+    "scrapped": "1",
+    "last_used": ""
   },
   "120": {
     "location": "Bay1, G1",
