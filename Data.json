@@ -444,7 +444,7 @@
     "image": "POWER\\088 - Han 40D.jpg"
   },
   "089": {
-    "location": "BAY3, C2",
+    "location": "BAY3, C1",
     "description": "6x 2-Pin MiniFit Jr Male",
     "image": "POWER\\089 - 2-Pin MiniFit Jr M.jpg"
   },
@@ -504,7 +504,7 @@
     "image": "CAT7\\100 - M12 A-Code 5-Pole M.jpg"
   },
   "101": {
-    "location": "Bay3, E1",
+    "location": "Bay1, G1",
     "description": "1x Han 18EE F",
     "image": "POWER\\101 - Han 18EE F.jpg"
   },
@@ -1165,7 +1165,7 @@
     "image": "POWER\\229 - Neutrik NAC3MPXXA F.jpg"
   },
   "230": {
-    "location": "Bay3,F1",
+    "location": "Bay1,B2",
     "description": "1x Loaded Shroud Quintax F, 1x M12 D-Code F",
     "image": "CAT5&6\\230 - Delatim Loom.jpg"
   },
