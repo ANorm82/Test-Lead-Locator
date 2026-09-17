@@ -362,7 +362,7 @@
     "image": "POWER\\072 - 5-Pin Kontermutter Male.jpg"
   },
   "073": {
-    "location": "Bay3, B1",
+    "location": "Bay1, B1",
     "description": "1x 4-Pin Burndy",
     "image": "POWER\\073 - 4-Pin Burndy Circular.jpg"
   },
@@ -887,7 +887,7 @@
     "image": "POWER\\175 - W PL300 F.jpg"
   },
   "176": {
-    "location": "Bay3, B1",
+    "location": "Bay1, C2",
     "description": "Han CD Female",
     "image": "POWER\\176 - Han CD F.jpg"
   },
@@ -1322,7 +1322,7 @@
     "image": "POWER\\262 - Neutrik XLR Female.jpg"
   },
   "263": {
-    "location": "BAY3, B1",
+    "location": "BAY1, C2",
     "description": "Han CD Male",
     "image": "POWER\\263 - Han CD Male.jpg"
   },
