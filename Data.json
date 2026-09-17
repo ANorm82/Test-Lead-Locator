@@ -202,7 +202,7 @@
     "image": "POWER\\040 - HPP.jpg"
   },
   "041": {
-    "location": "Bay1, A",
+    "location": "Bay2, C3",
     "description": "Edwards/Ishida loom",
     "image": "POWER\\041 - Edwards-Ishida.jpg"
   },
@@ -307,12 +307,12 @@
     "image": "POWER\\061 - Han E Protected M.jpg"
   },
   "062": {
-    "location": "Bay2, E4",
+    "location": "Bay2, D4",
     "description": "1x Han Q7/0 Male",
     "image": "POWER\\062 - Han Q7-0 M.jpg"
   },
   "063": {
-    "location": "Bay2, F2",
+    "location": "Bay2, D4",
     "description": "Han 72DD Female",
     "image": "POWER\\063-A - Han 72DD F (1-72).jpg"
   },
@@ -459,7 +459,7 @@
     "image": "POWER\\091 - 7-Pin WIKA M.jpg"
   },
   "092": {
-    "location": "Bay3, C3",
+    "location": "Bay2, D4",
     "description": "1x Han Q7/0 Female",
     "image": "POWER\\092 - Han Q7-0 F.jpg"
   },
@@ -852,7 +852,7 @@
     "image": "POWER\\168 - Molex MiniFit M-F.JPG"
   },
   "169": {
-    "location": "Bay2, G4",
+    "location": "Bay1, B1",
     "description": "2x 4-Pin Binder Female",
     "image": "POWER\\169 - 4-Pin Binder F.JPG"
   },
