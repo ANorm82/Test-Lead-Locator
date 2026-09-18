@@ -962,12 +962,12 @@
     "image": "POWER\\190 - 14 Pin Wago Male.jpg"
   },
   "191": {
-    "location": "Bay3, A",
+    "location": "Bay2, B3",
     "description": "2x 4-Core Han D F, 2x Han 200A M",
     "image": "POWER\\191 - ZPN Loom 1.JPG"
   },
   "192": {
-    "location": "Bay3, A",
+    "location": "Bay2, B3",
     "description": "2x 100A M, 2x Han D F, 2x HAN C F",
     "image": "POWER\\192 - ZPN Loom 2.JPG"
   },
