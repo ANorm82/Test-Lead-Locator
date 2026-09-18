@@ -332,12 +332,12 @@
     "image": "POWER\\066 - Han 70A M.jpg"
   },
   "067": {
-    "location": "Bay2, G2",
+    "location": "Bay1, G3",
     "description": "1x 9-Pin D-Sub Female",
     "image": "POWER\\067 - 9-Pin D-Sub F.jpg"
   },
   "068": {
-    "location": "Bay2, G2",
+    "location": "Bay1, G3",
     "description": "D-Sub 2C2W",
     "image": "POWER\\068 - D-Sub 2C2W.jpg"
   },
@@ -367,7 +367,7 @@
     "image": "POWER\\073 - 4-Pin Burndy Circular.jpg"
   },
   "074": {
-    "location": "Bay2, G2",
+    "location": "Bay1, G3",
     "description": "1X 9-Pin D-Sub Male",
     "image": "POWER\\074 - 9-Pin D-Sub M.jpg"
   },
@@ -606,7 +606,7 @@
     "image": "POWER\\120 - Han DDD F.jpg"
   },
   "121": {
-    "location": "Bay2, G2",
+    "location": "Bay1, G3",
     "description": "15-Way D-Sub M\\F",
     "image": "POWER\\121 - 15-Pin D-Sub M-F.jpg"
   },
@@ -862,7 +862,7 @@
     "image": "POWER\\170 - 9-Pin D-Sub Male to Thermocouple.JPG"
   },
   "171": {
-    "location": "Bay2, G2",
+    "location": "Bay1, G3",
     "description": "17W2 D-Sub Male",
     "image": "POWER\\171 - 17W2 D-Sub Male.jpg"
   },
@@ -972,7 +972,7 @@
     "image": "POWER\\192 - ZPN Loom 2.JPG"
   },
   "193": {
-    "location": "Bay2, G2",
+    "location": "Bay1, G3",
     "description": "37-Pin D-Sub Male to 37-Pin D-Sub Female",
     "image": "POWER\\193 - 37-Pin D-Sub M-F.JPG"
   },
