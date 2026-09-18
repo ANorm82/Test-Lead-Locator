@@ -1032,7 +1032,7 @@
     "image": "POWER\\204 - Amazon 70A Male.jpg"
   },
   "205": {
-    "location": "Bay1, C1",
+    "location": "Bay3, D3",
     "description": "Han 1A-12-c-m",
     "image": "POWER\\205 - Han 1A-12-c-m.jpg"
   },
@@ -1502,7 +1502,7 @@
     "image": ""
   },
   "295": {
-    "location": "BAY3, D1",
+    "location": "BAY1, C1",
     "description": "3x 70A Female - Short Earth",
     "image": "POWER\\295 - 3x 70A Female - Short Earth.jpg"
   },
