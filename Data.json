@@ -454,7 +454,7 @@
     "image": "POWER\\090 - 64-Pin DIN Power M.jpg"
   },
   "091": {
-    "location": "Bay3, C3",
+    "location": "Bay1, D2",
     "description": "7-Pin WIKA Male",
     "image": "POWER\\091 - 7-Pin WIKA M.jpg"
   },
@@ -626,7 +626,7 @@
     "image": "POWER\\124 - Han Q2-0 F.jpg"
   },
   "125": {
-    "location": "Bay3, C3",
+    "location": "Bay1, D2",
     "description": "1x 4-Pin HSV Male",
     "image": "POWER\\125 - HSV M.jpg"
   },
@@ -1307,12 +1307,12 @@
     "image": "POWER\\259 - ESG Cont Rack Loom.jpg"
   },
   "260": {
-    "location": "BAY3, E2",
+    "location": "BAY3, D1",
     "description": "MRE Loom 415V",
     "image": "POWER\\260 - MRE Loom 415V.jpg"
   },
   "261": {
-    "location": "BAY3, E2",
+    "location": "BAY3, D1",
     "description": "MRE Loom 690V",
     "image": "POWER\\261 - MRE Loom 690V.jpg"
   },
@@ -1437,7 +1437,7 @@
     "image": ""
   },
   "284": {
-    "location": "BAY3, C3",
+    "location": "BAY1, D2",
     "description": "Hirschmann GSSNA 300 3P+E Male",
     "image": "POWER\\284 - Hirschmann GSSNA 300 3P+E Male.jpg"
   },
@@ -1477,7 +1477,7 @@
     "image": "POWER\\291 - 37-Pin N-Type AB Connector Female.jpg"
   },
   "292": {
-    "location": "BAY3, F3",
+    "location": "BAY1, D3",
     "description": "Geopura 39-Pin TE Male",
     "image": "POWER\\292 - Geopura 39-Pin TE Male.jpg"
   },
@@ -1522,7 +1522,7 @@
     "image": "POWER\\297 - 6-Pin AB Connector Male.jpg"
   },
   "298": {
-    "location": "BAY3, F3",
+    "location": "BAY1, D3",
     "description": "GX-16 6-Way Male",
     "image": "POWER\\298 - GX-16 6-Way Male.jpg"
   }
