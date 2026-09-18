@@ -409,17 +409,17 @@
     "image": "POWER\\081 - Han 200A F.jpg"
   },
   "082": {
-    "location": "BAY2, E3",
+    "location": "BAY1, E3",
     "description": "2x 37-Pin X-Type AB Connector Female",
     "image": "POWER\\082 - 37-Pin X-Type F.jpg"
   },
   "083": {
-    "location": "BAY2, E3",
+    "location": "BAY1, E3",
     "description": "2x 37-Pin Y-Type AB Connector Female",
     "image": "POWER\\083 - 37-Pin Y-Type F.jpg"
   },
   "084": {
-    "location": "BAY2, E3",
+    "location": "BAY1, E3",
     "description": "2x 37-Pin N-Type AB Connector Female",
     "image": "POWER\\084 - 37-Pin N-Type F.jpg"
   },
@@ -1017,7 +1017,7 @@
     "image": "POWER\\201 - Han DD Quad Female.jpg"
   },
   "202": {
-    "location": "Bay1, A",
+    "location": "Bay1, C1",
     "description": "Han 1A-12-c-f to Power Jacks",
     "image": "LOOM\\202 - Ocado Camera Test Loom.jpg"
   },
@@ -1032,7 +1032,7 @@
     "image": "POWER\\204 - Amazon 70A Male.jpg"
   },
   "205": {
-    "location": "Bay3, D3",
+    "location": "Bay1, C1",
     "description": "Han 1A-12-c-m",
     "image": "POWER\\205 - Han 1A-12-c-m.jpg"
   },
