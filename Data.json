@@ -449,7 +449,7 @@
     "image": "POWER\\089 - 2-Pin MiniFit Jr M.jpg"
   },
   "090": {
-    "location": "Bay 2, G3",
+    "location": "Bay 1, G2",
     "description": "1x 64-Pin DIN Male",
     "image": "POWER\\090 - 64-Pin DIN Power M.jpg"
   },
@@ -574,7 +574,7 @@
     "image": "POWER\\114 - Han Q8-0 M.jpg"
   },
   "115": {
-    "location": "Bay2, G3",
+    "location": "Bay1, G2",
     "description": "1x 48-Pin DIN Power Female",
     "image": "POWER\\115 - 48-Pin DIN F.jpg"
   },
