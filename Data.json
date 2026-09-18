@@ -529,12 +529,12 @@
     "image": "POWER\\105 - Mains Power Lead.jpg"
   },
   "106": {
-    "location": "Bay3, F2",
+    "location": "Bay1, B3",
     "description": "3x 4-Pin Burndy Connector Male",
     "image": "POWER\\106 - 4-Pin Binder M.jpg"
   },
   "107": {
-    "location": "Bay3, F2",
+    "location": "Bay1, B3",
     "description": "2x 6-Pin Burndy Connector Male",
     "image": "POWER\\107 - 6-Pin Binder M.jpg"
   },
@@ -1257,12 +1257,12 @@
     "image": "POWER\\250 - Deutsch DT04-6P Female.jpg"
   },
   "251": {
-    "location": "BAY3, F2",
+    "location": "BAY1, B3",
     "description": "Souriau SMS6P1 Female - M Crimp",
     "image": "POWER\\251 - Souriau SMS6P1 Female - M Crimp.jpg"
   },
   "252": {
-    "location": "BAY3, F2",
+    "location": "BAY1, B3",
     "description": "Souriau SMS6R1 Female",
     "image": "POWER\\252 - Souriau SMS6R1 Female.jpg"
   },
