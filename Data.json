@@ -202,7 +202,7 @@
     "image": "POWER\\040 - HPP.jpg"
   },
   "041": {
-    "location": "Bay2, C3",
+    "location": "Bay1, C3",
     "description": "Edwards/Ishida loom",
     "image": "POWER\\041 - Edwards-Ishida.jpg"
   },
@@ -237,7 +237,7 @@
     "image": "POWER\\047 - Han 6EE F.jpg"
   },
   "048": {
-    "location": "Bay2, C3",
+    "location": "Bay1, C3",
     "description": "3x STAS20",
     "image": "POWER\\048 - STAS20.jpg"
   },
@@ -247,12 +247,12 @@
     "image": "POWER\\049 - STAK20.jpg"
   },
   "050": {
-    "location": "Bay 2, C3",
+    "location": "Bay 1, C3",
     "description": "3-Pin HPP Female",
     "image": "POWER\\050 - 3-Pin HPP F.jpg"
   },
   "051": {
-    "location": "Bay2, C3",
+    "location": "Bay1 C3",
     "description": "3x 3-Pin HPP Male",
     "image": "POWER\\051 - 3-Pin HPP M.jpg"
   },
@@ -262,17 +262,17 @@
     "image": "Power\\052 - 2-Pin Thermocouple F.jpg"
   },
   "053": {
-    "location": "Bay2, C3",
+    "location": "Bay1, C3",
     "description": "6x 2-Pin Thermo Male",
     "image": "POWER\\053 - 2-Pin Thermocouple M.jpg"
   },
   "054": {
-    "location": "Bay2, C3",
+    "location": "Bay1, C3",
     "description": "4x 3-Pin Thermo Female",
     "image": "POWER\\054 - 3-Pin Thermocouple F.jpg"
   },
   "055": {
-    "location": "Bay2, C3",
+    "location": "Bay1, C3",
     "description": "3-Pin Thermo Male",
     "image": "POWER\\055 - 3-Pin Thermocouple M.jpg"
   },
@@ -857,7 +857,7 @@
     "image": "POWER\\169 - 4-Pin Binder F.JPG"
   },
   "170": {
-    "location": "Bay2, C3",
+    "location": "Bay1, C3",
     "description": "4x Thermocouple Male to 9-Pin D-Sub Male",
     "image": "POWER\\170 - 9-Pin D-Sub Male to Thermocouple.JPG"
   },
