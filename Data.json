@@ -484,7 +484,7 @@
     "image": "POWER\\096 - Baldwin HT Lead.jpg"
   },
   "097": {
-    "location": "Bay3, D2",
+    "location": "Bay2, D2",
     "description": "1x 19-Pin AB Connector Female",
     "image": "POWER\\097 - 19-Pin AB F.jpg"
   },
@@ -514,12 +514,12 @@
     "image": "POWER\\102 - Han 46EE M.jpg"
   },
   "103": {
-    "location": "Bay3, D2",
+    "location": "Bay2, D2",
     "description": "1x 6-Pin AB Connector Male",
     "image": "POWER\\103 - 6-Pin AB M.jpg"
   },
   "104": {
-    "location": "Bay3, D2",
+    "location": "Bay2 D2",
     "description": "1x 19-Pin AB Connector Male",
     "image": "POWER\\104 - 19-Pin AB M.jpg"
   },
@@ -1447,7 +1447,7 @@
     "image": "POWER\\285 - Molex MX150 Male.jpg"
   },
   "286": {
-    "location": "BAY3, D2",
+    "location": "BAY2, D2",
     "description": "10-Pin AB connector Male",
     "image": "POWER\\286 - 10-Pin AB connector Male.jpg"
   },
@@ -1457,12 +1457,12 @@
     "image": "CAT7\\287 - M12 Y-Code Female.jpg"
   },
   "288": {
-    "location": "BAY3, D2",
+    "location": "BAY2, D2",
     "description": "19-Pin AB Connector Male W-Coded",
     "image": "POWER\\288 - 19-Pin AB Connector Male W-Coded.jpg"
   },
   "289": {
-    "location": "BAY3, D2",
+    "location": "BAY2, D2",
     "description": "37-Pin AB Connector N-Coded Male",
     "image": "POWER\\289 - 37-Pin AB Connector N-Coded Male.jpg"
   },
@@ -1472,7 +1472,7 @@
     "image": "CAT7\\290 - USB 3.0 Male.jpg"
   },
   "291": {
-    "location": "BAY3, D2",
+    "location": "BAY2, D2",
     "description": "37-Pin N-Type AB Connector Female",
     "image": "POWER\\291 - 37-Pin N-Type AB Connector Female.jpg"
   },
@@ -1517,7 +1517,7 @@
     "image": ""
   },
   "297": {
-    "location": "BAY3, D2",
+    "location": "BAY2, D2",
     "description": "6-Pin AB Connector Male",
     "image": "POWER\\297 - 6-Pin AB Connector Male.jpg"
   },
