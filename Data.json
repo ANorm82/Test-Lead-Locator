@@ -656,7 +656,7 @@
     "image": "POWER\\130 - Han Q2-0 M.jpg"
   },
   "131": {
-    "location": "Bay1, B1",
+    "location": "MA2",
     "description": "M12 A-Code 5-Pole Male",
     "image": "CAT5&6\\131 - M12 A-Code 5-Pole M.jpg"
   },
@@ -917,9 +917,9 @@
     "image": "POWER\\181 - 12x Red Blade Crimps.jpg"
   },
   "182": {
-    "location": "Bay3, G1",
-    "description": "12x D-Sub Male Crimps",
-    "image": "POWER\\182 - 12x D-Sub Male Crimps.jpg"
+    "location": "MA3",
+    "description": "M12 A-Code 5-Pole Male",
+    "image": "CAT5&6\\131 - M12 A-Code 5-Pole M.jpg"
   },
   "183": {
     "location": "Bay3, G1",
