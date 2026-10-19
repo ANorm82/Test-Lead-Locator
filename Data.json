@@ -641,7 +641,7 @@
     "image": ""
   },
   "128": {
-    "location": "Bay3, D1",
+    "location": "Bay2, C4",
     "description": "1x BALS 3-Phase Male",
     "image": "POWER\\128 - 1x BALS 3-Phase M.jpg"
   },
@@ -1027,7 +1027,7 @@
     "image": "POWER\\203 - 3-Pin Neutrik Male+Female.jpg"
   },
   "204": {
-    "location": "Bay3, D1",
+    "location": "Bay2, C4",
     "description": "3x 70A Male",
     "image": "POWER\\204 - Amazon 70A Male.jpg"
   },
@@ -1307,12 +1307,12 @@
     "image": "POWER\\259 - ESG Cont Rack Loom.jpg"
   },
   "260": {
-    "location": "BAY3, D1",
+    "location": "Bay2, C4",
     "description": "MRE Loom 415V",
     "image": "POWER\\260 - MRE Loom 415V.jpg"
   },
   "261": {
-    "location": "BAY3, D1",
+    "location": "BAY2, C4",
     "description": "MRE Loom 690V",
     "image": "POWER\\261 - MRE Loom 690V.jpg"
   },
