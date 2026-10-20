@@ -1032,7 +1032,7 @@
     "image": "POWER\\204 - Amazon 70A Male.jpg"
   },
   "205": {
-    "location": "Bay3, D3",
+    "location": "Bay2, B4",
     "description": "Han 1A-12-c-m",
     "image": "POWER\\205 - Han 1A-12-c-m.jpg"
   },
@@ -1332,12 +1332,12 @@
     "image": "POWER\\264 - Mennekes 60A 3-Phase Male.jpg"
   },
   "265": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han 1A-5+PE-c-m-latch",
     "image": "POWER\\265 - Han 1A-5+PE-c-m-latch.jpg"
   },
   "266": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han 1A-5+PE-c-f-latch",
     "image": "POWER\\266 - Han 1A-5+PE-c-f-latch.jpg"
   },
@@ -1362,7 +1362,7 @@
     "image": "POWER\\270 - Han 75DDD Female.jpg"
   },
   "271": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han Domino EE cube, M.2",
     "image": "POWER\\271 - Han Domino EE cube M.2.jpg"
   },
@@ -1372,12 +1372,12 @@
     "image": ""
   },
   "272": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han 100A Single Module M-F",
     "image": "POWER\\272 - Han 100A Single Module M-F.jpg"
   },
   "273": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han Domino EE cube F.2",
     "image": "POWER\\273 - Han Domino EE cube F.2.jpg"
   },
@@ -1427,7 +1427,7 @@
     "image": "LOOM\\282 - LUL Flying Loom.jpg"
   },
   "283": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han-1A-12-c-f",
     "image": "POWER\\283 - Han-1A-12-c-f.jpg"
   },
@@ -1482,7 +1482,7 @@
     "image": "POWER\\292 - Geopura 39-Pin TE Male.jpg"
   },
   "293": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han 1A 3+PE Male",
     "image": "POWER\\293 - Han 1A 3+PE Male.jpg"
   },
@@ -1507,7 +1507,7 @@
     "image": "POWER\\295 - 3x 70A Female - Short Earth.jpg"
   },
   "296": {
-    "location": "BAY3, D3",
+    "location": "BAY2, B4",
     "description": "Han 1A 3+PE Female",
     "image": "POWER\\296 - Han 1A 3+PE Female.jpg"
   },
