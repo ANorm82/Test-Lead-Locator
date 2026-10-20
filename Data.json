@@ -1057,7 +1057,7 @@
     "image": "POWER\\126 - 6-Pin In Line DIN M.jpg"
   },
   "210": {
-    "location": "Bay3, D1",
+    "location": "Bay2, C4",
     "description": "3x 70A Female",
     "image": "POWER\\210 - Amazon 70A Female.jpg"
   },
@@ -1502,7 +1502,7 @@
     "image": ""
   },
   "295": {
-    "location": "Bay2, C4",
+    "location": "BAY3, D1",
     "description": "3x 70A Female - Short Earth",
     "image": "POWER\\295 - 3x 70A Female - Short Earth.jpg"
   },
