@@ -569,7 +569,7 @@
     "image": "POWER\\113 - 5-Pin XHP M.jpg"
   },
   "114": {
-    "location": "Bay3, G2",
+    "location": "Bay1, E2",
     "description": "Han Q8/0 Male",
     "image": "POWER\\114 - Han Q8-0 M.jpg"
   },
@@ -1140,7 +1140,7 @@
     "image": "LOOM\\224 - Han Multi Module F.jpg"
   },
   "225": {
-    "location": "Bay3, G2",
+    "location": "Bay1, E2",
     "description": "Anord 100 Loom",
     "image": "LOOM\\225 - Anord 100 Loom.jpg"
   },
@@ -1247,7 +1247,7 @@
     "image": "POWER\\247 - Han 36DD Female.jpg"
   },
   "249": {
-    "location": "BAY3, G2",
+    "location": "Bay1, E2",
     "description": "Souriau SMS36R1 Male",
     "image": "POWER\\249 - Souriau SMS36P1 Male.jpg"
   },
@@ -1267,7 +1267,7 @@
     "image": "POWER\\252 - Souriau SMS6R1 Female.jpg"
   },
   "253": {
-    "location": "BAY3, G2",
+    "location": "Bay1, E2",
     "description": "Souriau SMS36R1 Female",
     "image": "POWER\\253 - Souriau SMS36R1 Female.jpg"
   },
@@ -1287,7 +1287,7 @@
     "image": "POWER\\255 - ESG Test Box Loom.jpg"
   },
   "256": {
-    "location": "BAY3, G2",
+    "location": "Bay1, E2",
     "description": "Souriau SMS3RDH3",
     "image": "POWER\\256 - Souriau SMS3RDH3.jpg"
   },
