@@ -564,12 +564,12 @@
     "image": "POWER\\112 - Han 64D.jpg"
   },
   "113": {
-    "location": "Bay1, F2",
+    "location": "Bay3, G1",
     "description": "2x 5-Pin XHP connector",
     "image": "POWER\\113 - 5-Pin XHP M.jpg"
   },
   "114": {
-    "location": "Bay1, E2",
+    "location": "Bay3, G2",
     "description": "Han Q8/0 Male",
     "image": "POWER\\114 - Han Q8-0 M.jpg"
   },
@@ -631,7 +631,7 @@
     "image": "POWER\\125 - HSV M.jpg"
   },
   "126": {
-    "location": "Bay1, F2",
+    "location": "Bay3, G3",
     "description": "1x 6-Pin In Line DIN M",
     "image": "POWER\\126 - 6-Pin In Line DIN M.jpg"
   },
@@ -842,12 +842,12 @@
     "image": "POWER\\166 - Han 350A M.jpg"
   },
   "167": {
-    "location": "Bay1, F2",
+    "location": "Bay3, G1",
     "description": "Molex MiniFit M\\F + Clips",
     "image": "POWER\\167 - Molex MiniFit M-F + Clips.JPG"
   },
   "168": {
-    "location": "Bay1, F2",
+    "location": "Bay3, G1",
     "description": "3x 4-Pin Molex MiniFit M\\F",
     "image": "POWER\\168 - Molex MiniFit M-F.JPG"
   },
@@ -922,7 +922,7 @@
     "image": "CAT5&6\\131 - M12 A-Code 5-Pole M.jpg"
   },
   "183": {
-    "location": "Bay1, F2",
+    "location": "Bay3, G1",
     "description": "12x Han D Male Crimps",
     "image": "POWER\\183 - 12x Han D Male Crimps.jpg"
   },
@@ -1032,7 +1032,7 @@
     "image": "POWER\\204 - Amazon 70A Male.jpg"
   },
   "205": {
-    "location": "Bay2, B4",
+    "location": "Bay3, D3",
     "description": "Han 1A-12-c-m",
     "image": "POWER\\205 - Han 1A-12-c-m.jpg"
   },
@@ -1057,7 +1057,7 @@
     "image": "POWER\\126 - 6-Pin In Line DIN M.jpg"
   },
   "210": {
-    "location": "Bay2, C4",
+    "location": "Bay3, D1",
     "description": "3x 70A Female",
     "image": "POWER\\210 - Amazon 70A Female.jpg"
   },
@@ -1140,12 +1140,12 @@
     "image": "LOOM\\224 - Han Multi Module F.jpg"
   },
   "225": {
-    "location": "Bay1, E2",
+    "location": "Bay3, G2",
     "description": "Anord 100 Loom",
     "image": "LOOM\\225 - Anord 100 Loom.jpg"
   },
   "226": {
-    "location": "Bay1, E2",
+    "location": "Bay3, G2",
     "description": "Anord 200 Loom",
     "image": "LOOM\\225 - Anord 200 Loom.jpg"
   },
@@ -1212,12 +1212,12 @@
     "image": "CAT5&6\\240 - M12 B-Code 5-Pole F.jpg"
   },
   "241": {
-    "location": "Bay1, F2",
+    "location": "BAY3, G3",
     "description": "MC4 M+F",
     "image": "POWER\\241 - MC4 M+F.jpg"
   },
   "242": {
-    "location": "Bay1, F2",
+    "location": "BAY3, G3",
     "description": "Han Guiding Relay Module M+F",
     "image": "POWER\\242 - Han Guiding Relay Module M+F.jpg"
   },
@@ -1247,12 +1247,12 @@
     "image": "POWER\\247 - Han 36DD Female.jpg"
   },
   "249": {
-    "location": "Bay1, E2",
+    "location": "BAY3, G2",
     "description": "Souriau SMS36R1 Male",
     "image": "POWER\\249 - Souriau SMS36P1 Male.jpg"
   },
   "250": {
-    "location": "Bay1, F2",
+    "location": "BAY3, G3",
     "description": "Deutsch DT04-6P Female",
     "image": "POWER\\250 - Deutsch DT04-6P Female.jpg"
   },
@@ -1267,12 +1267,12 @@
     "image": "POWER\\252 - Souriau SMS6R1 Female.jpg"
   },
   "253": {
-    "location": "Bay1, E2",
+    "location": "BAY3, G2",
     "description": "Souriau SMS36R1 Female",
     "image": "POWER\\253 - Souriau SMS36R1 Female.jpg"
   },
   "254": {
-    "location": "BAY2, C4",
+    "location": "BAY3, D1",
     "description": "BALS 16A M/F",
     "image": "POWER\\254 - BALS 16A M/F.jpg"
   },
@@ -1287,12 +1287,12 @@
     "image": "POWER\\255 - ESG Test Box Loom.jpg"
   },
   "256": {
-    "location": "Bay1, E2",
+    "location": "MC1",
     "description": "Souriau SMS3RDH3",
     "image": "POWER\\256 - Souriau SMS3RDH3.jpg"
   },
   "257": {
-    "location": "Bay1, F2",
+    "location": "BAY3, G3",
     "description": "DT06 Female with Male Crimps",
     "image": "POWER\\257 - DT06 Female with Male Crimps.jpg"
   },
@@ -1332,12 +1332,12 @@
     "image": "POWER\\264 - Mennekes 60A 3-Phase Male.jpg"
   },
   "265": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han 1A-5+PE-c-m-latch",
     "image": "POWER\\265 - Han 1A-5+PE-c-m-latch.jpg"
   },
   "266": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han 1A-5+PE-c-f-latch",
     "image": "POWER\\266 - Han 1A-5+PE-c-f-latch.jpg"
   },
@@ -1362,7 +1362,7 @@
     "image": "POWER\\270 - Han 75DDD Female.jpg"
   },
   "271": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han Domino EE cube, M.2",
     "image": "POWER\\271 - Han Domino EE cube M.2.jpg"
   },
@@ -1372,12 +1372,12 @@
     "image": ""
   },
   "272": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han 100A Single Module M-F",
     "image": "POWER\\272 - Han 100A Single Module M-F.jpg"
   },
   "273": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han Domino EE cube F.2",
     "image": "POWER\\273 - Han Domino EE cube F.2.jpg"
   },
@@ -1427,7 +1427,7 @@
     "image": "LOOM\\282 - LUL Flying Loom.jpg"
   },
   "283": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han-1A-12-c-f",
     "image": "POWER\\283 - Han-1A-12-c-f.jpg"
   },
@@ -1442,7 +1442,7 @@
     "image": "POWER\\284 - Hirschmann GSSNA 300 3P+E Male.jpg"
   },
   "285": {
-    "location": "Bay1, F2",
+    "location": "BAY3, G3",
     "description": "Molex MX150 Male",
     "image": "POWER\\285 - Molex MX150 Male.jpg"
   },
@@ -1482,7 +1482,7 @@
     "image": "POWER\\292 - Geopura 39-Pin TE Male.jpg"
   },
   "293": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han 1A 3+PE Male",
     "image": "POWER\\293 - Han 1A 3+PE Male.jpg"
   },
@@ -1502,12 +1502,12 @@
     "image": ""
   },
   "295": {
-    "location": "BAY2, C4",
+    "location": "BAY3, D1",
     "description": "3x 70A Female - Short Earth",
     "image": "POWER\\295 - 3x 70A Female - Short Earth.jpg"
   },
   "296": {
-    "location": "BAY2, B4",
+    "location": "BAY3, D3",
     "description": "Han 1A 3+PE Female",
     "image": "POWER\\296 - Han 1A 3+PE Female.jpg"
   },
