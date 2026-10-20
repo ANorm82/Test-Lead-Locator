@@ -564,7 +564,7 @@
     "image": "POWER\\112 - Han 64D.jpg"
   },
   "113": {
-    "location": "Bay3, G1",
+    "location": "Bay1, F2",
     "description": "2x 5-Pin XHP connector",
     "image": "POWER\\113 - 5-Pin XHP M.jpg"
   },
@@ -631,7 +631,7 @@
     "image": "POWER\\125 - HSV M.jpg"
   },
   "126": {
-    "location": "Bay3, G3",
+    "location": "Bay1, F2",
     "description": "1x 6-Pin In Line DIN M",
     "image": "POWER\\126 - 6-Pin In Line DIN M.jpg"
   },
@@ -842,12 +842,12 @@
     "image": "POWER\\166 - Han 350A M.jpg"
   },
   "167": {
-    "location": "Bay3, G1",
+    "location": "Bay1, F2",
     "description": "Molex MiniFit M\\F + Clips",
     "image": "POWER\\167 - Molex MiniFit M-F + Clips.JPG"
   },
   "168": {
-    "location": "Bay3, G1",
+    "location": "Bay1, F2",
     "description": "3x 4-Pin Molex MiniFit M\\F",
     "image": "POWER\\168 - Molex MiniFit M-F.JPG"
   },
@@ -922,7 +922,7 @@
     "image": "CAT5&6\\131 - M12 A-Code 5-Pole M.jpg"
   },
   "183": {
-    "location": "Bay3, G1",
+    "location": "Bay1, F2",
     "description": "12x Han D Male Crimps",
     "image": "POWER\\183 - 12x Han D Male Crimps.jpg"
   },
@@ -1212,12 +1212,12 @@
     "image": "CAT5&6\\240 - M12 B-Code 5-Pole F.jpg"
   },
   "241": {
-    "location": "BAY3, G3",
+    "location": "Bay1, F2",
     "description": "MC4 M+F",
     "image": "POWER\\241 - MC4 M+F.jpg"
   },
   "242": {
-    "location": "BAY3, G3",
+    "location": "Bay1, F2",
     "description": "Han Guiding Relay Module M+F",
     "image": "POWER\\242 - Han Guiding Relay Module M+F.jpg"
   },
@@ -1252,7 +1252,7 @@
     "image": "POWER\\249 - Souriau SMS36P1 Male.jpg"
   },
   "250": {
-    "location": "BAY3, G3",
+    "location": "Bay1, F2",
     "description": "Deutsch DT04-6P Female",
     "image": "POWER\\250 - Deutsch DT04-6P Female.jpg"
   },
@@ -1292,7 +1292,7 @@
     "image": "POWER\\256 - Souriau SMS3RDH3.jpg"
   },
   "257": {
-    "location": "BAY3, G3",
+    "location": "Bay1, F2",
     "description": "DT06 Female with Male Crimps",
     "image": "POWER\\257 - DT06 Female with Male Crimps.jpg"
   },
@@ -1442,7 +1442,7 @@
     "image": "POWER\\284 - Hirschmann GSSNA 300 3P+E Male.jpg"
   },
   "285": {
-    "location": "BAY3, G3",
+    "location": "Bay1, F2",
     "description": "Molex MX150 Male",
     "image": "POWER\\285 - Molex MX150 Male.jpg"
   },
