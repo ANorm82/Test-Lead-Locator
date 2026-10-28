@@ -1257,12 +1257,12 @@
     "image": "POWER\\250 - Deutsch DT04-6P Female.jpg"
   },
   "251": {
-    "location": "BAY1, B3",
+    "location": "MC1",
     "description": "Souriau SMS6P1 Female - M Crimp",
     "image": "POWER\\251 - Souriau SMS6P1 Female - M Crimp.jpg"
   },
   "252": {
-    "location": "BAY1, B3",
+    "location": "MC1",
     "description": "Souriau SMS6R1 Female",
     "image": "POWER\\252 - Souriau SMS6R1 Female.jpg"
   },
@@ -1322,7 +1322,7 @@
     "image": "POWER\\262 - Neutrik XLR Female.jpg"
   },
   "263": {
-    "location": "BAY1, C2",
+    "location": "MC1",
     "description": "Han CD Male",
     "image": "POWER\\263 - Han CD Male.jpg"
   },
