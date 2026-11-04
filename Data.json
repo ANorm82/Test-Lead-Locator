@@ -534,7 +534,7 @@
     "image": "POWER\\106 - 4-Pin Binder M.jpg"
   },
   "107": {
-    "location": "Bay1, B3",
+    "location": "MC2",
     "description": "2x 6-Pin Burndy Connector Male",
     "image": "POWER\\107 - 6-Pin Binder M.jpg"
   },
@@ -1242,7 +1242,7 @@
     "image": "POWER\\246 - Han 36DD Male.jpg"
   },
   "247": {
-    "location": "BAY2, C2",
+    "location": "MC2",
     "description": "Han 36DD Female",
     "image": "POWER\\247 - Han 36DD Female.jpg"
   },
@@ -1292,7 +1292,7 @@
     "image": "POWER\\256 - Souriau SMS3RDH3.jpg"
   },
   "257": {
-    "location": "Bay1, F2",
+    "location": "MC2",
     "description": "DT06 Female with Male Crimps",
     "image": "POWER\\257 - DT06 Female with Male Crimps.jpg"
   },
