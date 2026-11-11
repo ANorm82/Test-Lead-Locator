@@ -337,7 +337,7 @@
     "image": "POWER\\067 - 9-Pin D-Sub F.jpg"
   },
   "068": {
-    "location": "Bay1, G3",
+    "location": "MA1",
     "description": "D-Sub 2C2W",
     "image": "POWER\\068 - D-Sub 2C2W.jpg"
   },
@@ -606,7 +606,7 @@
     "image": "POWER\\120 - Han DDD F.jpg"
   },
   "121": {
-    "location": "Bay1, G3",
+    "location": "MA3",
     "description": "15-Way D-Sub M\\F",
     "image": "POWER\\121 - 15-Pin D-Sub M-F.jpg"
   },
@@ -887,7 +887,7 @@
     "image": "POWER\\175 - W PL300 F.jpg"
   },
   "176": {
-    "location": "Bay1, C2",
+    "location": "MB1",
     "description": "Han CD Female",
     "image": "POWER\\176 - Han CD F.jpg"
   },
@@ -1237,7 +1237,7 @@
     "image": "POWER\\245 - Souriau SMS6P1 Male.jpg"
   },
   "246": {
-    "location": "BAY2, C2",
+    "location": "MC2",
     "description": "Han 36DD Male",
     "image": "POWER\\246 - Han 36DD Male.jpg"
   },
@@ -1247,7 +1247,7 @@
     "image": "POWER\\247 - Han 36DD Female.jpg"
   },
   "249": {
-    "location": "Bay1, E2",
+    "location": "MC2",
     "description": "Souriau SMS36R1 Male",
     "image": "POWER\\249 - Souriau SMS36P1 Male.jpg"
   },
@@ -1267,7 +1267,7 @@
     "image": "POWER\\252 - Souriau SMS6R1 Female.jpg"
   },
   "253": {
-    "location": "Bay1, E2",
+    "location": "MC1",
     "description": "Souriau SMS36R1 Female",
     "image": "POWER\\253 - Souriau SMS36R1 Female.jpg"
   },
@@ -1277,12 +1277,12 @@
     "image": "POWER\\254 - BALS 16A M/F.jpg"
   },
   "248": {
-    "location": "BAY2, C2",
+    "location": "MC2",
     "description": "ESG 179 Wago Lead",
     "image": "POWER\\248 - ESG 179 Wago Lead.jpg"
   },
   "255": {
-    "location": "BAY1, G1",
+    "location": "MC2",
     "description": "ESG Test Box Loom",
     "image": "POWER\\255 - ESG Test Box Loom.jpg"
   },
@@ -1302,7 +1302,7 @@
     "image": "POWER\\258 - 3x Han 200A M.jpg"
   },
   "259": {
-    "location": "BAY1, C1",
+    "location": "MC2",
     "description": "ESG Cont Rack Loom",
     "image": "POWER\\259 - ESG Cont Rack Loom.jpg"
   },
