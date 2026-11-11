@@ -479,7 +479,7 @@
     "image": "CAT5&6\\095 - Quintax Loaded Shroud M.jpg"
   },
   "096": {
-    "location": "Bay3, A",
+    "location": "MA1",
     "description": "Baldwin HT & Earth Lead",
     "image": "POWER\\096 - Baldwin HT Lead.jpg"
   },
@@ -730,9 +730,11 @@
     "image": "POWER\\144 - BT Screen.jpg"
   },
   "145": {
-    "location": "MA1",
-    "description": "Gigabit Wiring Adapter",
-    "image": "CAT7\\045 - M12 X F - RJI.jpg"
+    "description": "0",
+    "location": "0",
+    "image": "0",
+    "scrapped": "1",
+    "last_used": ""
   },
   "146": {
     "location": "MA3",
