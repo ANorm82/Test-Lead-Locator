@@ -479,9 +479,11 @@
     "image": "CAT5&6\\095 - Quintax Loaded Shroud M.jpg"
   },
   "096": {
-    "location": "MA1",
-    "description": "Baldwin HT & Earth Lead",
-    "image": "POWER\\096 - Baldwin HT Lead.jpg"
+    "description": "0",
+    "location": "0",
+    "image": "0",
+    "scrapped": "1",
+    "last_used": ""
   },
   "097": {
     "location": "Bay2, D2",
