@@ -789,7 +789,7 @@
     "image": "POWER\\155 - M12 S-Code M.jpg"
   },
   "156": {
-    "location": "Bay2, A",
+    "location": "Bay2, F3",
     "description": "8x Han 350A Female",
     "image": "POWER\\156 - Han 350A F.jpg"
   },
@@ -841,7 +841,7 @@
     "last_used": ""
   },
   "166": {
-    "location": "Bay2, A1",
+    "location": "Bay2, F3",
     "description": "4x Han 350A Male",
     "image": "POWER\\166 - Han 350A M.jpg"
   },
@@ -1066,7 +1066,7 @@
     "image": "POWER\\210 - Amazon 70A Female.jpg"
   },
   "211": {
-    "location": "Bay2, A",
+    "location": "Bay2, F2",
     "description": "Siemens DANI 022 Loom",
     "image": "LOOM\\211 - Siemens DANI 022 Loom.jpg"
   },
@@ -1078,7 +1078,7 @@
     "last_used": ""
   },
   "213": {
-    "location": "Bay2, A",
+    "location": "Bay2, F2",
     "description": "Siemens DANI 018 Loom",
     "image": "LOOM\\213 - Siemens DANI 018 Loom.jpg"
   },
@@ -1098,7 +1098,7 @@
     "image": "POWER\\216 - 12-Pin Wago F.jpg"
   },
   "217": {
-    "location": "Bay2, A",
+    "location": "Bay2, F2",
     "description": "Siemens DANI 025 Loom",
     "image": "LOOM\\217 - Siemens DANI 025 Loom.jpg"
   },
